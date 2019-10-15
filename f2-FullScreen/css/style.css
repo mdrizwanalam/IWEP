@@ -1,0 +1,54 @@
+
+
+body {
+    margin: 0;
+    background: cornflowerblue;
+}
+
+#element {
+	margin: 40px auto 20px auto;
+	height: 200px;
+	width: 400px;
+	background-color: #e9e9e9;
+	font-size: 20px;
+	padding: 40px 0 0 0;
+	text-align: center;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+#go-button {
+    width: 200px;
+    height: 40px;
+    display: block;
+    font-size: 1em;
+    margin: 50px auto 0 auto;
+    background-color: aqua;
+    
+}
+
+/* webkit requires explicit width, height = 100% of sceeen */
+/* webkit also takes margin into account in full screen also - so margin should be removed (otherwise black areas will be seen) */
+#element:-webkit-full-screen {
+	width: 100%;
+	height: 100%;
+	background-color: pink;
+	margin: 0;
+}
+
+#element:-moz-full-screen {
+	background-color: pink;
+	margin: 0;
+}
+
+#element:-ms-fullscreen {
+	background-color: pink;
+	margin: 0;
+}
+
+/* W3C proposal that will eventually come in all browsers */
+#element:fullscreen { 
+	background-color: pink;
+	margin: 0;
+}
+

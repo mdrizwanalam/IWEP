@@ -1,0 +1,17 @@
+body {
+  background-color: #bde9d4;
+}
+
+#starttime {
+  font-size: 3em;
+  text-align: center;
+}
+
+#showtime {
+  font-size: 2.5em;
+  text-align: center;
+  border-radius: 20px;
+  padding: 50px;
+  margin: 50px;
+  background-color: #ef7220;
+}
